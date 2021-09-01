@@ -2,26 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.mikesec.ch/about/</loc>
+    <loc>/archive/</loc>
+    <lastmod>2021-05-01T14:00:21+02:00</lastmod>
+  </url><url>
+    <loc>/tags/blog/</loc>
+    <lastmod>2021-05-01T13:30:15+02:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-05-01T13:30:15+02:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2021-05-01T13:30:15+02:00</lastmod>
+  </url><url>
+    <loc>/post/secondpost/</loc>
+    <lastmod>2021-05-01T13:30:15+02:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2021-05-01T13:30:15+02:00</lastmod>
+  </url><url>
+    <loc>/about/</loc>
     <lastmod>2021-05-01T00:51:46+02:00</lastmod>
   </url><url>
-    <loc>https://blog.mikesec.ch/tags/blog/</loc>
+    <loc>/post/firstone/</loc>
     <lastmod>2021-04-30T14:55:24+02:00</lastmod>
   </url><url>
-    <loc>https://blog.mikesec.ch/posts/firstone/</loc>
-    <lastmod>2021-04-30T14:55:24+02:00</lastmod>
+    <loc>/blog/</loc>
   </url><url>
-    <loc>https://blog.mikesec.ch/</loc>
-    <lastmod>2021-04-30T14:55:24+02:00</lastmod>
-  </url><url>
-    <loc>https://blog.mikesec.ch/posts/</loc>
-    <lastmod>2021-04-30T14:55:24+02:00</lastmod>
-  </url><url>
-    <loc>https://blog.mikesec.ch/tags/</loc>
-    <lastmod>2021-04-30T14:55:24+02:00</lastmod>
-  </url><url>
-    <loc>https://blog.mikesec.ch/blog/</loc>
-  </url><url>
-    <loc>https://blog.mikesec.ch/series/</loc>
+    <loc>/series/</loc>
   </url>
 </urlset>
