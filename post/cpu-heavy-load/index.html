@@ -3,7 +3,7 @@
   <head>
     
       <title>
-        Firstone ::
+        Cpu Heavy Load ::
         Mike Sec Blog — Where I roam to share information with others
       </title>
     
@@ -11,16 +11,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta
   name="description"
-  content="Everything has a beginning&amp;hellip; So I decided to give it a go with this HUGO engine and start a blog with the help of it and use Typora to help me structure my posts&amp;hellip; I wonder if this is going to work well tho&amp;hellip;
-Where to start with a new blog? Just testing around&amp;hellip; at the end of the day that&amp;rsquo;s what this is for actually&amp;hellip;
-Everything&amp;rsquo;s complicated like giving a name to the blog&amp;hellip; So we continue our testing later on today&amp;hellip; right now need to prep for my 1v1 and my connect&amp;hellip; :)"
+  content="Generating CPU Load with PowerShell So I have changed a few things in one of my lab servers and needed to make sure I would not &amp;ldquo;burn&amp;rdquo; the CPU down while I am sleeping if some process gets stuck at 100%&amp;hellip; You never know what the gremlins on your apps are going to do while you&amp;rsquo;re at sleep, so I thought &amp;ldquo;Better be safe than sorry&amp;rdquo; and although a ThreadRipper 2 is&amp;hellip; somehow hard to overload, I decided to give it a go and load it up."
 />
 <meta
   name="keywords"
   content="blog, IT, Security, Microsoft, Linux, pfSense, ELK"
 />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="/post/firstone/" />
+<link rel="canonical" href="/post/cpu-heavy-load/" />
 
 
 
@@ -50,21 +48,17 @@ Everything&amp;rsquo;s complicated like giving a name to the blog&amp;hellip; So
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/"/>
 
-<meta name="twitter:title" content="Firstone"/>
-<meta name="twitter:description" content="Everything has a beginning&hellip; So I decided to give it a go with this HUGO engine and start a blog with the help of it and use Typora to help me structure my posts&hellip; I wonder if this is going to work well tho&hellip;
-Where to start with a new blog? Just testing around&hellip; at the end of the day that&rsquo;s what this is for actually&hellip;
-Everything&rsquo;s complicated like giving a name to the blog&hellip; So we continue our testing later on today&hellip; right now need to prep for my 1v1 and my connect&hellip; :)"/>
+<meta name="twitter:title" content="Cpu Heavy Load"/>
+<meta name="twitter:description" content="Generating CPU Load with PowerShell So I have changed a few things in one of my lab servers and needed to make sure I would not &ldquo;burn&rdquo; the CPU down while I am sleeping if some process gets stuck at 100%&hellip; You never know what the gremlins on your apps are going to do while you&rsquo;re at sleep, so I thought &ldquo;Better be safe than sorry&rdquo; and although a ThreadRipper 2 is&hellip; somehow hard to overload, I decided to give it a go and load it up."/>
 
 
 
-<meta property="og:title" content="Firstone" />
-<meta property="og:description" content="Everything has a beginning&hellip; So I decided to give it a go with this HUGO engine and start a blog with the help of it and use Typora to help me structure my posts&hellip; I wonder if this is going to work well tho&hellip;
-Where to start with a new blog? Just testing around&hellip; at the end of the day that&rsquo;s what this is for actually&hellip;
-Everything&rsquo;s complicated like giving a name to the blog&hellip; So we continue our testing later on today&hellip; right now need to prep for my 1v1 and my connect&hellip; :)" />
+<meta property="og:title" content="Cpu Heavy Load" />
+<meta property="og:description" content="Generating CPU Load with PowerShell So I have changed a few things in one of my lab servers and needed to make sure I would not &ldquo;burn&rdquo; the CPU down while I am sleeping if some process gets stuck at 100%&hellip; You never know what the gremlins on your apps are going to do while you&rsquo;re at sleep, so I thought &ldquo;Better be safe than sorry&rdquo; and although a ThreadRipper 2 is&hellip; somehow hard to overload, I decided to give it a go and load it up." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/firstone/" /><meta property="og:image" content="/"/><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-04-30T14:55:24+02:00" />
-<meta property="article:modified_time" content="2021-04-30T14:55:24+02:00" /><meta property="og:site_name" content="Mike Sec Blog" />
+<meta property="og:url" content="/post/cpu-heavy-load/" /><meta property="og:image" content="/"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-10-07T15:46:43+02:00" />
+<meta property="article:modified_time" content="2021-10-07T15:46:43+02:00" /><meta property="og:site_name" content="Mike Sec Blog" />
 
 
 
@@ -191,11 +185,11 @@ Everything&rsquo;s complicated like giving a name to the blog&hellip; So we cont
   
 
   <div class="post">
-    <h1 class="post-title">Firstone</h1>
+    <h1 class="post-title">Cpu Heavy Load</h1>
     <div class="post-meta">
       
         <span class="post-date">
-          2021-04-30
+          2021-10-07
         </span>
 
         
@@ -208,7 +202,7 @@ Everything&rsquo;s complicated like giving a name to the blog&hellip; So we cont
 
       
         <span class="post-read-time"
-          >— 1 min read</span
+          >— 2 min read</span
         >
       
     </div>
@@ -218,6 +212,12 @@ Everything&rsquo;s complicated like giving a name to the blog&hellip; So we cont
         
           <a href="/tags/blog/">#blog</a>&nbsp;
         
+          <a href="/tags/cpu/">#cpu</a>&nbsp;
+        
+          <a href="/tags/testing/">#testing</a>&nbsp;
+        
+          <a href="/tags/lab/">#lab</a>&nbsp;
+        
       </span>
     
 
@@ -225,13 +225,42 @@ Everything&rsquo;s complicated like giving a name to the blog&hellip; So we cont
 
     <div class="post-content">
       
-      <h3 id="everything-has-a-beginning">Everything has a beginning&hellip;</h3>
-<p>So I decided to give it a go with this HUGO engine and start a blog with the help of it and use Typora to help me structure my posts&hellip; I wonder if this is going to work well tho&hellip;</p>
-<h2 id="where-to-start-with-a-new-blog">Where to start with a new blog?</h2>
-<p>Just testing around&hellip; at the end of the day that&rsquo;s what this is for actually&hellip;</p>
-<h1 id="everythings-complicated-like-giving-a-name-to-the-blog">Everything&rsquo;s complicated like giving a name to the blog&hellip;</h1>
-<p><img src="/images/test.png" alt="Just a test image"></p>
-<p>So we continue our testing later on today&hellip; right now need to prep for my 1v1 and my connect&hellip; :)</p>
+      <h1 id="generating-cpu-load-with-powershell">Generating CPU Load with PowerShell</h1>
+<p>So I have changed a few things in one of my lab servers and needed to make sure I would not &ldquo;burn&rdquo; the CPU down while I am sleeping if some process gets stuck at 100%&hellip;
+You never know what the gremlins on your apps are going to do while you&rsquo;re at sleep, so I thought &ldquo;Better be safe than sorry&rdquo; and although a ThreadRipper 2 is&hellip; somehow hard to overload, I decided to give it a go and load it up.</p>
+<h2 id="why-powershell">Why PowerShell?</h2>
+<p>Well, I had to go with PowerShell as my hosts are Core versions of Windows Server and hence, no graphical display support for most of the test / load CPU apps.
+Strangely enough this did the trick quite well. Although initially it was only charging the CPU at 50%&hellip; at a certain moment it just went ballistic and loaded the whole 48 threads to 100%.</p>
+<h2 id="the-script">The script&hellip;</h2>
+<p>In the search on the interwebs I found a script that actually does the whole trick and kudos to the guy that shared it <a href="https://www.robvit.com/windows_server/generate-cpu-load-with-powershell/" title="Generate CPU Load with Powershell">here</a> and decided to copy it here in case&hellip; you know&hellip; his blog goes away for some reason.</p>
+<h3 id="the-code">The code</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">$NumberOfLogicalProcessors = Get-WmiObject win32_processor | Select-Object -ExpandProperty NumberOfLogicalProcessors
+
+<span style="color:#66d9ef">ForEach</span> ($core <span style="color:#66d9ef">in</span> 1..$NumberOfLogicalProcessors){ 
+
+start-job -ScriptBlock{
+
+    $result = 1;
+    <span style="color:#66d9ef">foreach</span> ($loopnumber <span style="color:#66d9ef">in</span> 1..2147483647){
+        $result=1;
+        
+        <span style="color:#66d9ef">foreach</span> ($loopnumber1 <span style="color:#66d9ef">in</span> 1..2147483647){
+        $result=1;
+            
+            <span style="color:#66d9ef">foreach</span>($number <span style="color:#66d9ef">in</span> 1..2147483647){
+                $result = $result * $number
+            }
+        }
+
+            $result
+        }
+    }
+}
+
+Read-Host <span style="color:#e6db74">&#34;Press any key to exit...&#34;</span>
+Stop-Job * 
+</code></pre></div><p>And that&rsquo;s all you need :)</p>
+<p>Let it rip for a few minutes and you&rsquo;ll see how your CPU runs!</p>
 
     </div>
     
@@ -245,13 +274,13 @@ Everything&rsquo;s complicated like giving a name to the blog&hellip; So we cont
           </div>
           <div class="pagination__buttons">
             
-              <span class="button previous">
-                <a href="/post/cpu-heavy-load/">
-                  <span class="button__icon">←</span>
-                  <span class="button__text">Cpu Heavy Load</span>
+            
+              <span class="button next">
+                <a href="/post/firstone/">
+                  <span class="button__text">Firstone</span>
+                  <span class="button__icon">→</span>
                 </a>
               </span>
-            
             
           </div>
         </div>

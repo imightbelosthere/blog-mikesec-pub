@@ -9,10 +9,30 @@
     <description>Recent content on Mike Sec Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 May 2021 13:30:15 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 07 Oct 2021 15:46:43 +0200</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cpu Heavy Load</title>
+      <link>/post/cpu-heavy-load/</link>
+      <pubDate>Thu, 07 Oct 2021 15:46:43 +0200</pubDate>
+      
+      <guid>/post/cpu-heavy-load/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Generating CPU Load with PowerShell So I have changed a few things in one of my lab servers and needed to make sure I would not &amp;ldquo;burn&amp;rdquo; the CPU down while I am sleeping if some process gets stuck at 100%&amp;hellip; You never know what the gremlins on your apps are going to do while you&amp;rsquo;re at sleep, so I thought &amp;ldquo;Better be safe than sorry&amp;rdquo; and although a ThreadRipper 2 is&amp;hellip; somehow hard to overload, I decided to give it a go and load it up.
+          
+        
+        </description>
+    </item>
     
     <item>
       <title>Archive</title>
@@ -29,26 +49,6 @@
         
         
           
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>Secondpost</title>
-      <link>/post/secondpost/</link>
-      <pubDate>Sat, 01 May 2021 13:30:15 +0200</pubDate>
-      
-      <guid>/post/secondpost/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          Just checking how this works This is ridiculously hard&amp;hellip; fml&amp;hellip;
           
         
         </description>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog on Mike Sec Blog</title>
+    <title>testing on Mike Sec Blog</title>
     
     
     
-    <link>/tags/blog/</link>
-    <description>Recent content in blog on Mike Sec Blog</description>
+    <link>/tags/testing/</link>
+    <description>Recent content in testing on Mike Sec Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Oct 2021 15:46:43 +0200</lastBuildDate>
     
-	<atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/testing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -29,28 +29,6 @@
         
         
           Generating CPU Load with PowerShell So I have changed a few things in one of my lab servers and needed to make sure I would not &amp;ldquo;burn&amp;rdquo; the CPU down while I am sleeping if some process gets stuck at 100%&amp;hellip; You never know what the gremlins on your apps are going to do while you&amp;rsquo;re at sleep, so I thought &amp;ldquo;Better be safe than sorry&amp;rdquo; and although a ThreadRipper 2 is&amp;hellip; somehow hard to overload, I decided to give it a go and load it up.
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>Firstone</title>
-      <link>/post/firstone/</link>
-      <pubDate>Fri, 30 Apr 2021 14:55:24 +0200</pubDate>
-      
-      <guid>/post/firstone/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          Everything has a beginning&amp;hellip; So I decided to give it a go with this HUGO engine and start a blog with the help of it and use Typora to help me structure my posts&amp;hellip; I wonder if this is going to work well tho&amp;hellip;
-Where to start with a new blog? Just testing around&amp;hellip; at the end of the day that&amp;rsquo;s what this is for actually&amp;hellip;
-Everything&amp;rsquo;s complicated like giving a name to the blog&amp;hellip; So we continue our testing later on today&amp;hellip; right now need to prep for my 1v1 and my connect&amp;hellip; :)
           
         
         </description>
