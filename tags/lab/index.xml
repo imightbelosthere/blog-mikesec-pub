@@ -16,7 +16,7 @@
     
     
     <item>
-      <title>Cpu Heavy Load</title>
+      <title>Generating CPU Load with PowerShell</title>
       <link>/post/cpu-heavy-load/</link>
       <pubDate>Thu, 07 Oct 2021 15:46:43 +0200</pubDate>
       
@@ -29,7 +29,7 @@
         
         
         
-          Generating CPU Load with PowerShell So I have changed a few things in one of my lab servers and needed to make sure I would not &amp;ldquo;burn&amp;rdquo; the CPU down while I am sleeping if some process gets stuck at 100%&amp;hellip; You never know what the gremlins on your apps are going to do while you&amp;rsquo;re at sleep, so I thought &amp;ldquo;Better be safe than sorry&amp;rdquo; and although a ThreadRipper 2 is&amp;hellip; somehow hard to overload, I decided to give it a go and load it up.
+          Placing CPU under stress with PowerShell So I have changed a few things in one of my lab servers and needed to make sure I would not &amp;ldquo;burn&amp;rdquo; the CPU down while I am sleeping if some process gets stuck at 100%&amp;hellip; You never know what the gremlins on your apps are going to do while you&amp;rsquo;re at sleep, so I thought &amp;ldquo;Better be safe than sorry&amp;rdquo; and although a ThreadRipper 2 is&amp;hellip; somehow hard to overload, I decided to give it a go and load it up.
           
         
         </description>
